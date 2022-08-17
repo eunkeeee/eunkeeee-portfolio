@@ -24,7 +24,7 @@ function App() {
       {nav === "Home" ? (
         <div>
           <Home />{" "}
-          <button onClick={() => selectNav("Contact")}>
+          <button onClick={() => selectNav("Project")}>
             프로젝트 보러가기
           </button>
         </div>
