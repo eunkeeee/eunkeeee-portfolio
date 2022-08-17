@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <div>
-      <img src="../img/조은기.jpg" />
+      <img src="../img/profile.jpg" />
       <h1>조은기</h1>
       <ul>
         <h4>약력</h4>
