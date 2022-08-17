@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import styles from "./Header.module.css";
 import { useState } from "react";
 
-const Header = () => {
+const Header = ({ onClick }) => {
   return (
-    <div>
+    <div onClick={onClick}>
       <h1 className={styles.title}>은기의 포트폴리오</h1>
     </div>
   );

@@ -7,9 +7,14 @@ import styles from "./Navigation.module.css";
 
 function App() {
   const [nav, selectNav] = useState("Home");
+
   return (
     <div>
-      <Header />
+      <Header
+        onClick={() => {
+          selectNav("Home");
+        }}
+      />
       <nav className={styles.nav_display}>
         <div onClick={() => selectNav("Home")}>Home</div>
         <div onClick={() => selectNav("Project")}>Project</div>

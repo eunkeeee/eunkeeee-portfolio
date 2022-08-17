@@ -1,6 +1,6 @@
 import Content from "./Content";
 const Project = () => {
-  return <content />;
+  return <div>Project is here</div>;
 };
 
 export default Project;
