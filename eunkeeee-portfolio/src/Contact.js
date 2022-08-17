@@ -1,5 +1,6 @@
 import styles from "./Contact.module.css";
 import { useState } from "react";
+import ContactComponent from "./Contact-components";
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
@@ -20,27 +21,18 @@ const Contact = () => {
     // Github
     // Gmail
     <div className={styles.container}>
-      <a href="https://github.com/eunkeeee" target="_blank">
-        <div className={styles.content}>
-          <img
-            className={styles.img}
-            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-          />
-          <h4 className={styles.h4}>Github Link</h4>
-        </div>
-      </a>
-
-      <div
-        className={styles.content}
+      <ContactComponent
+        text="Github Link"
+        url="https://github.com/eunkeeee"
+        imgSrc="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+      />
+      {/* Copy Gmail */}
+      <ContactComponent
+        text={copied ? "Copied!" : "Copy Gmail"}
+        imgSrc="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png"
         onClick={copyMailAddress}
         onMouseLeave={backToGmail}
-      >
-        <img
-          className={styles.img}
-          src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png"
-        />
-        <h4 className={styles.h4}>{copied ? "Copied!" : "Copy Gmail"}</h4>
-      </div>
+      />
     </div>
   );
 };

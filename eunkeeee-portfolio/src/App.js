@@ -21,7 +21,14 @@ function App() {
         <div onClick={() => selectNav("Contact")}>Contact</div>
       </nav>
       <hr />
-      {nav === "Home" ? <Home /> : null}
+      {nav === "Home" ? (
+        <div>
+          <Home />{" "}
+          <button onClick={() => selectNav("Contact")}>
+            프로젝트 보러가기
+          </button>
+        </div>
+      ) : null}
       {nav === "Project" ? <Project /> : null}
       {nav === "Contact" ? <Contact /> : null}
     </div>
