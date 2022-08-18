@@ -1,0 +1,13 @@
+.imgDiv div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.imgDiv * * {
+  height: 110px;
+  width: auto;
+}
+body {
+  background-color: tomato;
+}

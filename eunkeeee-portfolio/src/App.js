@@ -6,6 +6,7 @@ import styles from "./Navigation.module.css";
 
 import Header from "./Header";
 import AboutMe from "./AboutMe";
+import Skills from "./Skills";
 
 function App() {
   const [nav, selectNav] = useState("Home");
@@ -14,6 +15,7 @@ function App() {
     <div className="app">
       <Header />
       <AboutMe />
+      <Skills />
 
       {/* <nav className={styles.nav_display}>
         <div onClick={() => selectNav("Project")}>Project</div>
