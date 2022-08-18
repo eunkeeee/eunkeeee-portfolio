@@ -12,12 +12,12 @@ function App() {
     <div className="app">
       <Header />
 
-      <nav className={styles.nav_display}>
+      {/* <nav className={styles.nav_display}>
         <div onClick={() => selectNav("Home")}>Home</div>
         <div onClick={() => selectNav("Project")}>Project</div>
         <div onClick={() => selectNav("Contact")}>Contact</div>
       </nav>
-      <hr />
+      <hr /> */}
       {nav === "Home" ? (
         <div>
           <Home />{" "}
