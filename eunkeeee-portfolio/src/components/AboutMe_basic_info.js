@@ -6,8 +6,8 @@ const AboutMe_basic_info = ({ iconImport, fieldLabel, fieldValue }) => {
       <div className={styles.basic_info}>
         <div className={styles.basic_info_icon_wrapper}>{iconImport}</div>
         <div className={styles.basic_info_field}>
-          <div>{fieldLabel}</div>
-          <div>{fieldValue}</div>
+          <div className={styles.fieldLabel}>{fieldLabel}</div>
+          <div className={styles.fieldValue}>{fieldValue}</div>
         </div>
       </div>
     </div>

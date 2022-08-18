@@ -40,7 +40,6 @@
 
 .Mainhead_Mainhead {
   position: relative;
-  font-family: var(--ko-title);
 }
 .Mainhead_Mainhead::before {
   filter: brightness(50%);
@@ -60,11 +59,13 @@
   margin: 0 auto;
   padding: 8.5rem 2rem 4rem 2rem;
   text-align: center;
+  font-family: var(--ko-article);
 }
 .Mainhead_title {
   font-size: 4rem;
   color: white;
   word-break: keep-all;
+  font-family: var(--ko-title);
 }
 .Mainhead_divider {
   width: 3.25rem;
