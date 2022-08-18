@@ -1,17 +1,16 @@
 import styles from "./AboutMe.module.css";
-import AboutMe_basic_info from "./AboutMe_basic_info";
+import AboutMe_basic_info from "./components/AboutMe_basic_info";
 
 const AboutMe = () => {
   return (
-    <article className={styles.AboutMe}>
+    <article id="AboutMe" className={styles.AboutMe}>
       <div className={styles.AboutMe_content}>
         <div className={styles.SectionTitle_Sectiontitle}>
           <div className={styles.SectionTitle_text}>ABOUT ME</div>
           <div className={styles.SectionTitle_link_wrapper}>
-            <img
-              className={styles.SectionTitle_link}
-              src="https://cdg-portfolio.com/images/black-link.png"
-            />
+            <a href="#AboutMe" name>
+              <i class="fa-solid fa-link"></i>
+            </a>
           </div>
         </div>
         <div className={styles.AboutMe_basic_infos}>

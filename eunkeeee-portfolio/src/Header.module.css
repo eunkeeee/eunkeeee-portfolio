@@ -5,6 +5,7 @@
   left: 0;
   background-color: transparent;
   z-index: 999;
+  font-family: var(--en-article);
 }
 .Header_content {
   display: flex;
@@ -16,7 +17,7 @@
   padding: 1.5rem 2rem;
   margin: 0 auto;
 }
-.title {
+.Header_title {
   font-size: 30px;
   font-weight: 700;
   margin: 0;
@@ -39,6 +40,7 @@
 
 .Mainhead_Mainhead {
   position: relative;
+  font-family: var(--ko-title);
 }
 .Mainhead_Mainhead::before {
   filter: brightness(50%);
@@ -60,7 +62,6 @@
   text-align: center;
 }
 .Mainhead_title {
-  font-weight: 400;
   font-size: 4rem;
   color: white;
   word-break: keep-all;

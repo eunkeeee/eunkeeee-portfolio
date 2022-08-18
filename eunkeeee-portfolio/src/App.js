@@ -12,7 +12,6 @@ function App() {
 
   return (
     <div className="app">
-      <div onClick={() => selectNav("Home")}>Home</div>
       <Header />
       <AboutMe />
 

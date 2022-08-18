@@ -9,7 +9,7 @@ const Header = ({ onClick }) => {
     <div className={styles.Header}>
       <header className={styles.Header_Header} onClick={onClick}>
         <div className={styles.Header_content}>
-          <div className={styles.title}>CEK's Portfolio</div>
+          <div className={styles.Header_title}>CEK's Portfolio</div>
           <div className={styles.Header_navigation__menus}>
             {/* Navigation Bar */}
             <div className={styles.Header_navigation__menu}>About Me</div>
