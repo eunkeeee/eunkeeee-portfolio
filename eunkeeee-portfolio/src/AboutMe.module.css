@@ -45,9 +45,9 @@
   font-family: var(--ko-article);
 }
 .basic_info_icon_wrapper {
-  /* width: 2rem;
+  width: 2rem;
   min-width: 2rem;
-  height: 2rem; */
+  height: 2rem;
   font-size: 2rem;
   margin-top: 0.2rem;
   margin-right: 2rem;
@@ -60,4 +60,5 @@
 .fieldValue {
   font-weight: 400;
   font-size: 1rem;
+  opacity: 0.7;
 }
