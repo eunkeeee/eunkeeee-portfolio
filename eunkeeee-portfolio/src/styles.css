@@ -1,9 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
-  --background-color: white;
-  --font-color: black;
+  --background-color: #f5f5f5;
+  --font-color: #272b34;
+  --main-background: #f5f5f5;
+  --logo-color: #6ad7f6;
+  --logo-background: white;
+  --light-background-color: #31353e;
+  --normal-font-weight: 400;
+  --normal-font-size: 1rem;
 }
 
 body {
   background-color: var(--background-color);
   color: var(--font-color);
+  font-family: Noto Sans KR, sans-serif;
+  margin: 0;
 }
+
+/* .wrapper {
+  display: flex;
+  align-items: center;
+} */

@@ -9,12 +9,9 @@ function App() {
   const [nav, selectNav] = useState("Home");
 
   return (
-    <div>
-      <Header
-        onClick={() => {
-          selectNav("Home");
-        }}
-      />
+    <div className="app">
+      <Header />
+
       <nav className={styles.nav_display}>
         <div onClick={() => selectNav("Home")}>Home</div>
         <div onClick={() => selectNav("Project")}>Project</div>
