@@ -1,8 +1,11 @@
+import styles from "./Home.module.css";
+import profileImg from "./img/profile.jpg";
+
 const Home = () => {
   return (
     <div>
-      <img src="../img/profile.jpg" />
-      <h1>조은기</h1>
+      <img className={styles.profileImg} src={profileImg} />
+      <h1 className={styles.title}>조은기</h1>
       <ul>
         <h4>약력</h4>
         <li>연세대학교 산업공학과 졸업 예정</li>

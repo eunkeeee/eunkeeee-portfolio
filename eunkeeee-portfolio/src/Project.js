@@ -9,6 +9,7 @@ const Project = () => {
       <Content
         imgSrc="#"
         title="Portfolio"
+        gitHubLink="https://github.com/eunkeeee/eunkeeee-portfolio.git"
         subtitle="ReactJS로 만든 포트폴리오 사이트"
       />
     </div>

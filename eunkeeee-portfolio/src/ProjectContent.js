@@ -1,10 +1,15 @@
-const Content = ({ imgSrc, title, subtitle }) => {
+import styles from "./ProjectContent.module.css";
+
+const Content = ({ imgSrc, title, subtitle, gitHubLink }) => {
   return (
-    <div>
-      <img src={imgSrc} />
+    <div className={styles.content}>
+      <img className={styles.img} src={imgSrc} />
       <h3>{title}</h3>
       <h4>{subtitle}</h4>
-      <div>
+      <a target="_blank" href={gitHubLink}>
+        GitHub 바로가기
+      </a>
+      <div className={styles.props}>
         <h5>ReactJS</h5>
         <h5>개인</h5>
       </div>
