@@ -1,18 +1,12 @@
 import styles from "./AboutMe.module.css";
 import AboutMe_basic_info from "./components/AboutMe_basic_info";
+import SubTitle from "./components/SubTitle";
 
 const AboutMe = () => {
   return (
     <article id="AboutMe" className={styles.AboutMe}>
       <div className={styles.AboutMe_content}>
-        <div className={styles.SectionTitle_Sectiontitle}>
-          <div className={styles.SectionTitle_text}>ABOUT ME</div>
-          <div className={styles.SectionTitle_link_wrapper}>
-            <a href="#AboutMe" name>
-              <i class="fa-solid fa-link"></i>
-            </a>
-          </div>
-        </div>
+        <SubTitle title="ABOUT ME" id="AboutMe" />
         <div className={styles.AboutMe_basic_infos}>
           <AboutMe_basic_info
             iconImport={<i class="fa-solid fa-person"></i>}
