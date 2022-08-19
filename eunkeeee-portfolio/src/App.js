@@ -5,8 +5,8 @@ import Contact from "./Contact";
 import styles from "./Navigation.module.css";
 
 import Header from "./Header";
-import AboutMe from "./AboutMe";
-import Skills from "./Skills";
+import AboutMe from "./screens/AboutMe";
+import Skills from "./screens/Skills";
 
 function App() {
   const [nav, selectNav] = useState("Home");

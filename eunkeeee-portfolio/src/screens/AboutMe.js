@@ -1,6 +1,6 @@
 import styles from "./AboutMe.module.css";
-import AboutMe_basic_info from "./components/AboutMe_basic_info";
-import SubTitle from "./components/SubTitle";
+import AboutMe_basic_info from "../components/AboutMe_basic_info";
+import SubTitle from "../components/SubTitle";
 
 const AboutMe = () => {
   return (

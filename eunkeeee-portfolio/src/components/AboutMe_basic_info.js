@@ -1,4 +1,4 @@
-import styles from "../AboutMe.module.css";
+import styles from "../screens/AboutMe.module.css";
 
 const AboutMe_basic_info = ({ iconImport, fieldLabel, fieldValue }) => {
   return (
