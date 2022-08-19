@@ -19,21 +19,11 @@ function App() {
       <AboutMe />
       <Skills />
 
-      {/* <nav className={styles.nav_display}>
-        <div onClick={() => selectNav("Project")}>Project</div>
-        <div onClick={() => selectNav("Contact")}>Contact</div>
-      </nav>
-      <hr />
-      {nav === "Home" ? (
-        <div>
-          <Home />{" "}
-          <button onClick={() => selectNav("Project")}>
-            프로젝트 보러가기
-          </button>
+      <a href="#top">
+        <div class="pageUpBtn">
+          <i class="fa-solid fa-arrow-up"></i>
         </div>
-      ) : null}
-      {nav === "Project" ? <Project /> : null}
-      {nav === "Contact" ? <Contact /> : null} */}
+      </a>
     </div>
   );
 }

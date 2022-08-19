@@ -1,16 +1,19 @@
 import styles from "./Header.module.css";
 import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const Header = ({ onClick }) => {
   const [isOpen, setMenu] = useState(false);
-  const isSmallWindow = useMediaQuery({
-    query: "(max-width:1100px)",
-  });
+  // const isSmallWindow = useMediaQuery({
+  //   query: "(max-width:1100px)",
+  // });
   return (
     <div>
       <header className={styles.Header} onClick={onClick}>
         <div className={styles.content}>
-          <div className={styles.title}>CEK's Portfolio</div>
+          <a href="#top">
+            <div className={styles.title}>CEK's Portfolio</div>
+          </a>
           {isOpen ? null : (
             <div className={styles.navigation__menus}>
               {/* Navigation Bar */}
