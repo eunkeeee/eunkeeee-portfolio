@@ -1,4 +1,4 @@
-.Header_Header {
+.Header {
   position: fixed;
   top: 0;
   right: 0;
@@ -7,7 +7,7 @@
   z-index: 999;
   font-family: var(--en-article);
 }
-.Header_content {
+.content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,18 +17,18 @@
   padding: 1.5rem 2rem;
   margin: 0 auto;
 }
-.Header_title {
+.title {
   font-size: 30px;
   font-weight: 700;
   margin: 0;
   color: var(--logo-color);
 }
 
-.Header_navigation__menus {
+.navigation__menus {
   display: flex;
   align-items: center;
 }
-.Header_navigation__menu {
+.navigation__menu {
   padding: 0 1rem;
   font-size: 1rem;
   font-weight: 700;
@@ -38,59 +38,38 @@
   font-weight: 400;
 }
 
-.Mainhead_Mainhead {
-  position: relative;
+.navBtn {
+  display: none;
 }
-.Mainhead_Mainhead::before {
-  filter: brightness(50%);
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-image: url("../img/logoBackImg.jpg");
-  background-size: cover;
-  z-index: -1;
-}
-.Mainhead_content {
-  width: 100%;
-  max-width: 71.25rem;
-  margin: 0 auto;
-  padding: 8.5rem 2rem 4rem 2rem;
-  text-align: center;
-  font-family: var(--ko-article);
-}
-.Mainhead_title {
-  font-size: 4rem;
-  color: white;
-  word-break: keep-all;
-  font-family: var(--ko-title);
-}
-.Mainhead_divider {
-  width: 3.25rem;
-  margin: 1.5rem auto;
-  height: 0;
-  border: none;
-  border-top: 0.2rem solid var(--logo-color);
-  opacity: 1;
-}
-.Mainhead_description {
-  margin: 0 auto 2rem;
-  color: var(--transparent-white);
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-.Mainhead_findOutMore {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 10rem;
-  background-color: var(--logo-color);
-  color: white;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  cursor: pointer;
+
+@media screen and (max-width: 850px) {
+  .content {
+    flex-direction: column;
+    background-color: white;
+    height: auto;
+    align-items: flex-start;
+  }
+  .navigation__menus {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navigation__menu {
+    color: black;
+    opacity: 0.5;
+  }
+  .navigation__menu:hover {
+    opacity: 1;
+  }
+  .title {
+    align-self: flex-start;
+    color: black;
+  }
+  .navBtn {
+    display: block;
+    position: absolute;
+    font-size: 25px;
+    top: 24px;
+    right: 32px;
+  }
 }

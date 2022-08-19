@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import styles from "./Navigation.module.css";
 
 import Header from "./screens/Header";
+import Mainhead from "./screens/Mainhead";
 import AboutMe from "./screens/AboutMe";
 import Skills from "./screens/Skills";
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <Mainhead />
       <AboutMe />
       <Skills />
 
