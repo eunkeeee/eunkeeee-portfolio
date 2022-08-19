@@ -37,12 +37,15 @@
   color: var(--transparent-white);
   font-weight: 400;
 }
-
-.navBtn {
+.navigation__menu:hover {
+  color: var(--logo-color);
+  font-weight: 500;
+}
+.toggleBtn {
   display: none;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1100px) {
   .content {
     flex-direction: column;
     background-color: white;
@@ -65,7 +68,7 @@
     align-self: flex-start;
     color: black;
   }
-  .navBtn {
+  .toggleBtn {
     display: block;
     position: absolute;
     font-size: 25px;
