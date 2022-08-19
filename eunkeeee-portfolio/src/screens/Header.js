@@ -1,8 +1,8 @@
-import App from "./App";
+import App from "../App";
 import PropTypes from "prop-types";
 import styles from "./Header.module.css";
 import { useState } from "react";
-import logoBackImg from "./img/logoBackImg.jpg";
+import logoBackImg from "../img/logoBackImg.jpg";
 
 const Header = ({ onClick }) => {
   return (

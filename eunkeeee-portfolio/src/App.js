@@ -4,7 +4,7 @@ import Project from "./Project";
 import Contact from "./Contact";
 import styles from "./Navigation.module.css";
 
-import Header from "./Header";
+import Header from "./screens/Header";
 import AboutMe from "./screens/AboutMe";
 import Skills from "./screens/Skills";
 
