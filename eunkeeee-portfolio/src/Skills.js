@@ -34,6 +34,33 @@ const Skills = () => {
               </div>
             }
           />
+          <Skill
+            title="Frontend"
+            imgSrcsWithDiv={
+              <div>
+                <img src="https://velog.velcdn.com/images/songe/post/c1c7427a-71c3-4de8-bf93-a224be79f6ae/image.PNG" />
+                <img src="https://velog.velcdn.com/images/rkddl6803/post/11c0a76b-52e5-4413-a799-05ded157e13e/image.png" />
+              </div>
+            }
+          />
+          <Skill
+            title="Frontend"
+            imgSrcsWithDiv={
+              <div>
+                <img src="https://velog.velcdn.com/images/songe/post/c1c7427a-71c3-4de8-bf93-a224be79f6ae/image.PNG" />
+                <img src="https://velog.velcdn.com/images/rkddl6803/post/11c0a76b-52e5-4413-a799-05ded157e13e/image.png" />
+              </div>
+            }
+          />
+          <Skill
+            title="Frontend"
+            imgSrcsWithDiv={
+              <div>
+                <img src="https://velog.velcdn.com/images/songe/post/c1c7427a-71c3-4de8-bf93-a224be79f6ae/image.PNG" />
+                <img src="https://velog.velcdn.com/images/rkddl6803/post/11c0a76b-52e5-4413-a799-05ded157e13e/image.png" />
+              </div>
+            }
+          />
         </div>
       </div>
     </article>
