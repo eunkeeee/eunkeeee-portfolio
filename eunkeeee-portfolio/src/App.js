@@ -8,6 +8,7 @@ import Header from "./screens/Header";
 import Mainhead from "./screens/Mainhead";
 import AboutMe from "./screens/AboutMe";
 import Skills from "./screens/Skills";
+import Archiving from "./screens/Archiving";
 
 function App() {
   const [nav, selectNav] = useState("Home");
@@ -18,6 +19,7 @@ function App() {
       <Mainhead />
       <AboutMe />
       <Skills />
+      <Archiving />
 
       <a href="#top">
         <div class="pageUpBtn">
