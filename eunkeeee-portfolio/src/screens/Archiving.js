@@ -4,7 +4,7 @@ import styles from "./Archiving.module.css";
 
 const Archiving = () => {
   return (
-    <div className={styles.Archiving}>
+    <div id="Archiving" className={styles.Archiving}>
       <div className={styles.content}>
         <SubTitle id="Archiving" title="Archiving" color="white" />
         <div className={styles.container}>

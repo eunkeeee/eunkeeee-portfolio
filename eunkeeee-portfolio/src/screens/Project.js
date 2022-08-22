@@ -7,7 +7,7 @@ import ProjectKakaotalk from "../img/kakaotalk.jpg";
 const Project = () => {
   const [count, setCount] = useState(0);
   return (
-    <div id="#Projects" className={styles.Projects}>
+    <div id="Projects" className={styles.Projects}>
       <div className={styles.content}>
         <SubTitle title="Projects" id="Projects" color="white" />
         <div className={styles.container}></div>
