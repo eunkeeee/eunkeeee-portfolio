@@ -1,4 +1,13 @@
-.content {
-}
-
 /* Element */
+.element {
+  display: flex;
+  flex-direction: column;
+  width: 26rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--background-color);
+  cursor: pointer;
+}
+.elementImg {
+  width: 100%;
+}
