@@ -1,14 +1,51 @@
-.content {
-  padding: 15px;
-  border: 2px solid var(--font-color);
+.Project {
+  padding: 3rem;
+  margin: 0 auto 2rem;
+  background-color: white;
+  border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
 }
-.img {
-  width: 300px;
-  height: 100px;
+.title {
+  padding-bottom: 0.5rem;
+  font-size: 2.5rem;
+  color: rgb(34, 34, 34);
+  text-align: center;
+  font-family: var(--ko-title);
 }
-.props {
+.period {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: black;
+  opacity: 0.6;
+  text-align: center;
+  font-family: var(--ko-article);
+}
+.info {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+}
+.imgs {
+  width: 50%;
+  margin-right: 3rem;
+}
+.imgs * {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  margin: 1rem auto 0;
+  font-weight: 500;
+}
+.nav i {
+  text-align: center;
+  opacity: 0.7;
+}
+.descriptions {
+  width: 45%;
+}
+.li {
+  list-style-image: ;
 }
