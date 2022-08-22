@@ -77,7 +77,7 @@ const Project = () => {
               </p>
             </div>
           }
-          MainFeature="Frontend만을 사용해 구현한 채팅과 유사한 기능, 시계, 카카오톡과 유사한 애니메이션 "
+          MainFeature="Frontend만을 사용해 구현한 채팅기능, 시계"
           url="https://eunkeeee.github.io/jihoon-chat/"
           frontend="HTML, CSS, VanillaJS"
           deployment="gh-pages"

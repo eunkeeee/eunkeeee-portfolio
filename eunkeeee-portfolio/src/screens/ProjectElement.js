@@ -18,11 +18,11 @@ const PrjoectElement = ({
       <div className={styles.info}>
         <div className={styles.imgs}>
           {imgSrc}
-          <nav className={styles.nav}>
+          {/* <nav className={styles.nav}>
             <i class="fa-solid fa-angle-left"></i>
             4/4
             <i class="fa-solid fa-angle-right"></i>
-          </nav>
+          </nav> */}
         </div>
         <div className={styles.descriptions}>
           <div className={styles.MainDescription}>{MainDescription}</div>
@@ -30,7 +30,7 @@ const PrjoectElement = ({
           <ul className="fa-ul">
             <li className={styles.li}>
               <span className="fa-li">
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
               </span>
               <div>주요 기능</div>
               <div>{MainFeature}</div>
@@ -41,10 +41,7 @@ const PrjoectElement = ({
                 <i class="fa-solid fa-check"></i>
               </span>
               <div>GitHub</div>
-              <div>
-                <a href={gitHubLink}></a>
-                {gitHubLink}
-              </div>
+              <a href={gitHubLink}>{gitHubLink}</a>
             </li>
             <li className={styles.li}>
               {" "}
@@ -52,7 +49,7 @@ const PrjoectElement = ({
                 <i class="fa-solid fa-check"></i>
               </span>
               <div>URL</div>
-              <div>{url}</div>
+              <a href={url}>{url}</a>
             </li>
             <li className={styles.li}>
               {" "}

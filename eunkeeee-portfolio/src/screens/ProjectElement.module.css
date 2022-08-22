@@ -46,6 +46,18 @@
 .descriptions {
   width: 45%;
 }
+
 .li {
-  list-style-image: ;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.li *:nth-child(2) {
+  width: 8.2rem;
+  font-weight: 900;
+  font-size: 1rem;
+  vertical-align: top;
+}
+.li *:last-child {
+  font-weight: 400;
+  font-size: 1rem;
 }
