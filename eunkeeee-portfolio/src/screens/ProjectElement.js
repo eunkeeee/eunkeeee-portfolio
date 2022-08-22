@@ -29,42 +29,61 @@ const PrjoectElement = ({
           <hr />
           <ul className="fa-ul">
             <li className={styles.li}>
-              <span className="fa-li">
-                <i className="fa-solid fa-check"></i>
-              </span>
-              <div>주요 기능</div>
+              <div>
+                <span className="fa-li">
+                  <i className="fa-solid fa-check"></i>
+                </span>
+                <div>주요 기능</div>
+              </div>
               <div>{MainFeature}</div>
             </li>
             <li className={styles.li}>
-              {" "}
-              <span className="fa-li">
-                <i class="fa-solid fa-check"></i>
-              </span>
-              <div>GitHub</div>
-              <a href={gitHubLink}>{gitHubLink}</a>
+              <div>
+                {" "}
+                <span className="fa-li">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <div>GitHub</div>
+              </div>
+              <div>
+                <a href={gitHubLink} target="_blank" className={styles.urlDeco}>
+                  {gitHubLink}
+                </a>
+              </div>
+            </li>
+            <li className={styles.li}>
+              <div>
+                <span className="fa-li">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <div>URL</div>
+              </div>
+              <div>
+                <a href={url} target="_blank" className={styles.urlDeco}>
+                  {url}
+                </a>
+              </div>
             </li>
             <li className={styles.li}>
               {" "}
-              <span className="fa-li">
-                <i class="fa-solid fa-check"></i>
-              </span>
-              <div>URL</div>
-              <a href={url}>{url}</a>
-            </li>
-            <li className={styles.li}>
-              {" "}
-              <span className="fa-li">
-                <i class="fa-solid fa-check"></i>
-              </span>
-              <div>Frontend</div>
+              <div>
+                {" "}
+                <span className="fa-li">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <div>Frontend</div>
+              </div>
               <div>{frontend}</div>
             </li>
             <li className={styles.li}>
               {" "}
-              <span className="fa-li">
-                <i class="fa-solid fa-check"></i>
-              </span>
-              <div>Deployment</div>
+              <div>
+                {" "}
+                <span className="fa-li">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <div>Deployment</div>
+              </div>
               <div>{deployment}</div>
             </li>
           </ul>

@@ -44,6 +44,7 @@
   opacity: 0.7;
 }
 .descriptions {
+  font-family: var(--ko-article);
   width: 45%;
 }
 
@@ -51,13 +52,21 @@
   display: flex;
   margin-bottom: 1rem;
 }
-.li *:nth-child(2) {
+.li div:first-child {
   width: 8.2rem;
   font-weight: 900;
   font-size: 1rem;
   vertical-align: top;
 }
-.li *:last-child {
+.li > div:last-child,
+.li > div:last-child * {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  width: calc(100% - 8.2rem);
+}
+.urlDeco {
+  text-decoration: none;
+}
+.urlDeco:visited {
+  text-decoration: none;
 }
