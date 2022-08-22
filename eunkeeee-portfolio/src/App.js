@@ -20,6 +20,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Archiving />
+      <Project />
 
       <a href="#top">
         <div class="pageUpBtn">

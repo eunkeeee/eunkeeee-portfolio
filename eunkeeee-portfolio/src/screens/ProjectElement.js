@@ -1,6 +1,6 @@
 import styles from "./ProjectElement.module.css";
 
-const Content = ({ imgSrc, title, subtitle, gitHubLink }) => {
+const PrjoectElement = ({ imgSrc, title, subtitle, gitHubLink }) => {
   return (
     <div className={styles.content}>
       <img className={styles.img} src={imgSrc} />
@@ -16,4 +16,4 @@ const Content = ({ imgSrc, title, subtitle, gitHubLink }) => {
     </div>
   );
 };
-export default Content;
+export default PrjoectElement;
