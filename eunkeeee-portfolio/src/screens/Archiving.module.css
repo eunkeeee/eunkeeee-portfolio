@@ -1,5 +1,6 @@
 .Archiving {
   background-color: black;
+  font-family: var(--ko-article);
 }
 .content {
   width: 100%;
