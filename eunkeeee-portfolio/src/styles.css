@@ -30,6 +30,9 @@ a {
   --en-article: "Open Sans", sans-serif;
   --ko-title: "Black Han Sans", sans-serif;
   --ko-article: "IBM Plex Sans KR", sans-serif;
+
+  /* Layout */
+  --screen-margin-top: calc(5rem + 20px);
 }
 
 body {

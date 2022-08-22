@@ -18,9 +18,15 @@
   margin-top: -1rem;
   left: -3.2rem;
   opacity: 0.5;
-  cursor: pointer;
 }
 .url {
   color: #909090;
   opacity: 1;
+  /* display: block;
+  position: relative;
+  top: -5rem; */
+  /* visibility: hidden; */
+}
+.url:target {
+  scroll-padding-top: 5rem;
 }
