@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Home from "./Home";
-import Project from "./Project";
 import Contact from "./Contact";
 import styles from "./Navigation.module.css";
 
@@ -9,6 +8,7 @@ import Mainhead from "./screens/Mainhead";
 import AboutMe from "./screens/AboutMe";
 import Skills from "./screens/Skills";
 import Archiving from "./screens/Archiving";
+import Project from "./screens/Project";
 
 function App() {
   const [nav, selectNav] = useState("Home");

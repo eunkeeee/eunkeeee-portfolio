@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Content from "./ProjectContent";
+import Content from "./ProjectElement";
 
 const Project = () => {
   const [count, setCount] = useState(0);

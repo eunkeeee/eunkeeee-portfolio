@@ -1,4 +1,4 @@
-import styles from "./ProjectContent.module.css";
+import styles from "./ProjectElement.module.css";
 
 const Content = ({ imgSrc, title, subtitle, gitHubLink }) => {
   return (
