@@ -24,7 +24,8 @@
   width: 100%;
 }
 
-.imgDiv * * {
-  height: 110px;
-  width: auto;
+.imgDiv div * {
+  height: 100px;
+  width: 100%;
+  object-fit: contain;
 }
