@@ -12,7 +12,6 @@ const Header = ({ onClick }) => {
       setLargeEnough(true);
       setMenu(true);
     }
-    console.log(isLargeEnough, window.innerWidth);
   };
 
   window.addEventListener("resize", onResize);
