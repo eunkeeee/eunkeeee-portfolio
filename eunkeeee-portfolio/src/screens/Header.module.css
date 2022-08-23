@@ -62,14 +62,18 @@
   .navigation__menus {
     flex-direction: column;
     align-items: center;
+    gap: 5px;
     width: 100%;
   }
-  .navigation__menu {
+  .navigation__menu a {
     color: black;
     opacity: 0.5;
+    font-weight: 500;
+    transition: all 0.1s ease-in-out;
   }
-  .navigation__menu:hover {
+  .navigation__menu a:hover {
     opacity: 1;
+    font-weight: 600;
   }
   .title {
     align-self: flex-start;

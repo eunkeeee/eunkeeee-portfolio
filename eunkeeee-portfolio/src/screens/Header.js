@@ -4,11 +4,18 @@ import { useMediaQuery } from "react-responsive";
 
 const Header = ({ onClick }) => {
   const [isOpen, setMenu] = useState(false);
-  const header = document.querySelector("#Header");
-  // header.styles.backgroundColor = "white";
+  const media = window.matchMedia(useMediaQuery);
+  matchMedia("screen and (max-width: 1100px)");
+  // const [whiteHeader, setWhite] = useState(false);
+  // window.addEventListener("scroll", () => {
+  //   if (window.scrollY > 80) {
+  //     setWhite(true);
+  //   }
+  // });
+
   return (
     <div>
-      <header id="Header" className={styles.Header} onClick={onClick}>
+      <header className={styles.Header} onClick={onClick}>
         <div className={styles.content}>
           <a href="#top">
             <div className={styles.title}>CEK's Portfolio</div>
@@ -34,7 +41,6 @@ const Header = ({ onClick }) => {
             </div>
           )}
           <a
-            href="#"
             className={styles.toggleBtn}
             onClick={() => {
               setMenu((prev) => !prev);
