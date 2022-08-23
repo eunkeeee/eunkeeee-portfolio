@@ -4,13 +4,12 @@ import { useMediaQuery } from "react-responsive";
 
 const Header = ({ onClick }) => {
   const [isOpen, setMenu] = useState(false);
-  const scrollHeader = () => {
-    console.log("im scrolled");
-  };
+  const header = document.querySelector("#Header");
+  // header.styles.backgroundColor = "white";
   return (
     <div>
-      <header className={styles.Header} onClick={onClick}>
-        <div className={styles.content} onScroll={scrollHeader}>
+      <header id="Header" className={styles.Header} onClick={onClick}>
+        <div className={styles.content}>
           <a href="#top">
             <div className={styles.title}>CEK's Portfolio</div>
           </a>
