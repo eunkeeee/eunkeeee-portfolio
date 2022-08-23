@@ -22,6 +22,12 @@
   font-weight: 700;
   margin: 0;
   color: var(--logo-color);
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+.title:hover {
+  font-weight: 900;
+  opacity: 1;
 }
 
 .navigation__menus {
@@ -36,10 +42,11 @@
   cursor: pointer;
   color: var(--transparent-white);
   font-weight: 400;
+  transition: all 0.4s;
 }
 .navigation__menu a:hover {
   color: var(--logo-color);
-  font-weight: 500;
+  font-weight: 900;
 }
 .toggleBtn {
   display: none;
