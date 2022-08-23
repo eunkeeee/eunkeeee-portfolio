@@ -4,21 +4,34 @@ import { useMediaQuery } from "react-responsive";
 
 const Header = ({ onClick }) => {
   const [isOpen, setMenu] = useState(false);
+  const scrollHeader = () => {
+    console.log("im scrolled");
+  };
   return (
     <div>
       <header className={styles.Header} onClick={onClick}>
-        <div className={styles.content}>
+        <div className={styles.content} onScroll={scrollHeader}>
           <a href="#top">
             <div className={styles.title}>CEK's Portfolio</div>
           </a>
           {isOpen ? null : (
             <div className={styles.navigation__menus}>
               {/* Navigation Bar */}
-              <div className={styles.navigation__menu}>About Me</div>
-              <div className={styles.navigation__menu}>Skills</div>
-              <div className={styles.navigation__menu}>Archiving</div>
-              <div className={styles.navigation__menu}>Projects</div>
-              <div className={styles.navigation__menu}>Career</div>
+              <div className={styles.navigation__menu}>
+                <a href="#AboutMe">About Me</a>
+              </div>
+              <div className={styles.navigation__menu}>
+                <a href="#Skills">Skills</a>
+              </div>
+              <div className={styles.navigation__menu}>
+                <a href="#Archiving">Archiving</a>
+              </div>
+              <div className={styles.navigation__menu}>
+                <a href="#Projects">Projects</a>
+              </div>
+              {/* <div className={styles.navigation__menu}>
+                <a href="#AboutMe">Career</a>
+              </div> */}
             </div>
           )}
           <a
