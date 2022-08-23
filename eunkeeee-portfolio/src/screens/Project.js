@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ProjectElement from "./ProjectElement";
+import ProjectElement from "../components/ProjectElement";
 import SubTitle from "../components/SubTitle";
 import styles from "./Project.module.css";
 import ProjectKakaotalk from "../img/kakaotalk.jpg";

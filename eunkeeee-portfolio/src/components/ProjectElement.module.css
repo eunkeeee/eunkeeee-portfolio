@@ -57,16 +57,34 @@
   font-weight: 900;
   font-size: 1rem;
   vertical-align: top;
+  color: tomato;
+  flex-shrink: 1;
 }
 .li > div:last-child,
 .li > div:last-child * {
   font-weight: 400;
   font-size: 0.9rem;
   width: calc(100% - 8.2rem);
+  color: blue;
+  flex-shrink: 2;
 }
 .urlDeco {
   text-decoration: none;
 }
 .urlDeco:visited {
   text-decoration: none;
+}
+@media screen and (max-width: 1000px) {
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgs {
+    margin: 0;
+  }
+  .descriptions {
+    margin-top: 3rem;
+    width: 100%;
+    word-break: break-all;
+  }
 }
