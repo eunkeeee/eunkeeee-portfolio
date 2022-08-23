@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./Footer.module.css";
-import Icon from "./Icon";
+import Icon from "../components/Icon";
 
 const Footer = () => {
   const [copied, setCopied] = useState(false);
