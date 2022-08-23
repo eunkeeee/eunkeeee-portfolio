@@ -1,5 +1,5 @@
 .AboutMe {
-  background-color: var(--background-color);
+  background-color: var(--AboutMe-background);
 }
 
 .AboutMe_content {

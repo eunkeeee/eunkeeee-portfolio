@@ -5,7 +5,7 @@
 }
 .SectionTitle_text {
   color: black;
-  border-bottom: 1px solid var(--border-bottom);
+  border-bottom: 1px solid var(--light-gray);
   font-weight: 400;
   font-size: 3rem;
   line-height: 1.5;
@@ -20,7 +20,7 @@
   opacity: 0.5;
 }
 .url {
-  color: #909090;
+  color: var(--light-gray);
   opacity: 1;
   /* display: block;
   position: relative;

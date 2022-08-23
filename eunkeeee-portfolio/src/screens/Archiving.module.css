@@ -1,5 +1,5 @@
 .Archiving {
-  background-color: black;
+  background-color: var(--Archiving-background);
   font-family: var(--ko-article);
 }
 .content {
@@ -19,8 +19,12 @@
   width: 26rem;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: var(--background-color);
+  background-color: var(--Archiving-element-background);
   cursor: pointer;
+  transition: all 0.4s;
+}
+.element:hover {
+  transform: translateY(5px);
 }
 .elementImg {
   width: 100%;

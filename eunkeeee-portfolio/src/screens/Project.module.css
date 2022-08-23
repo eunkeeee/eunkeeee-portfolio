@@ -1,5 +1,5 @@
 .Projects {
-  background-color: #1fa0be;
+  background-color: var(--Project-background);
 }
 .content {
   width: 100%;
