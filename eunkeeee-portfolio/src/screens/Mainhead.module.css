@@ -27,6 +27,7 @@
   color: white;
   word-break: keep-all;
   font-family: var(--ko-title);
+  animation: appear 2s ease-in-out 0s;
 }
 .divider {
   width: 3.25rem;
@@ -34,7 +35,8 @@
   height: 0;
   border: none;
   border-top: 0.2rem solid var(--logo-color);
-  opacity: 1;
+  opacity: 0;
+  animation: appear 2s ease-in-out 0.3s forwards;
 }
 .description {
   margin: 0 auto 2rem;
@@ -42,6 +44,8 @@
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.5;
+  opacity: 0;
+  animation: appear 2s ease-in-out 0.5s forwards;
 }
 .findOutMore {
   display: inline-block;
@@ -54,4 +58,15 @@
   font-weight: 400;
   line-height: 1.5;
   cursor: pointer;
+  opacity: 0;
+  animation: appear 2s ease-in-out 1s forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

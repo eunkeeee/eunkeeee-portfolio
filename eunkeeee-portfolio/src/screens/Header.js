@@ -4,21 +4,6 @@ import { useMediaQuery } from "react-responsive";
 
 const Header = ({ onClick }) => {
   const [isOpen, setMenu] = useState(false);
-  // const isSmallWindow = useMediaQuery({
-  //   query: "(max-width:1100px)",
-  // });
-  // const headerBack = document.querySelector(".content");
-  // headerBack.styles.backgroundColor = "tomato";
-  const setHeaderBackGround = () => {
-    // if (
-    //   document.body.scrollTop > 200 ||
-    //   document.documentElement.scrollTop > 200
-    // ) {
-    // event.target.styles.backgroundColor = "tomato";
-    // console.log(event.target);
-    console.log("im scrolled");
-    // }
-  };
   return (
     <div>
       <header className={styles.Header} onClick={onClick}>
