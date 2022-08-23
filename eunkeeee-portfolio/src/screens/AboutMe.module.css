@@ -11,7 +11,7 @@
 
 .AboutMe_basic_infos {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .basic_info_wrapper {
@@ -44,4 +44,15 @@
   font-weight: 400;
   font-size: 1rem;
   opacity: 0.7;
+}
+
+@media screen and (max-width: 800px) {
+  .basic_info_wrapper {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .basic_info_wrapper {
+    width: 100%;
+  }
 }
