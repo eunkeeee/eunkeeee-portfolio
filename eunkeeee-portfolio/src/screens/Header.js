@@ -4,6 +4,18 @@ import { useMediaQuery } from "react-responsive";
 
 const Header = ({ onClick }) => {
   const [isOpen, setMenu] = useState(false);
+  const [isLargeEnough, setLargeEnough] = useState();
+  const onResize = () => {
+    if (window.innerWidth < 1100) {
+      setLargeEnough(false);
+    } else {
+      setLargeEnough(true);
+      setMenu(true);
+    }
+    console.log(isLargeEnough, window.innerWidth);
+  };
+
+  window.addEventListener("resize", onResize);
   const media = window.matchMedia(useMediaQuery);
   matchMedia("screen and (max-width: 1100px)");
   // const [whiteHeader, setWhite] = useState(false);
@@ -41,6 +53,7 @@ const Header = ({ onClick }) => {
             </div>
           )}
           <a
+            href="#"
             className={styles.toggleBtn}
             onClick={() => {
               setMenu((prev) => !prev);
