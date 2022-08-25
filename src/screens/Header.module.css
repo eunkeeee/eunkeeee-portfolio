@@ -60,6 +60,7 @@
     height: auto;
   }
   .navigation__menus {
+    display: none;
     background-color: tomato;
     margin-top: 2rem;
     flex-direction: column;
@@ -87,5 +88,8 @@
     font-size: 25px;
     top: 24px;
     right: 32px;
+  }
+  .navigation__menus.active {
+    display: flex;
   }
 }
